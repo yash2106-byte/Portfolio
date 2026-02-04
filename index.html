@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Professional portfolio showcasing full-stack development projects and technical skills">
+  <meta name="description"
+    content="Professional portfolio showcasing full-stack development projects and technical skills">
   <title>Yash Raj - Full Stack Developer Portfolio</title>
-  
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
+
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-    
-    html, body {
+
+    html,
+    body {
       font-family: 'Inter', system-ui, -apple-system, sans-serif;
       background-color: #0B0F14;
       color: #E5E7EB;
       overflow-x: hidden;
       scroll-behavior: smooth;
     }
-    
+
     #root {
       min-height: 100vh;
       position: relative;
@@ -40,7 +43,7 @@
       height: 100%;
       z-index: 0;
       opacity: 0.4;
-      background: 
+      background:
         radial-gradient(ellipse at 20% 30%, rgba(99, 102, 241, 0.15) 0%, transparent 50%),
         radial-gradient(ellipse at 80% 70%, rgba(139, 92, 246, 0.15) 0%, transparent 50%),
         radial-gradient(ellipse at 50% 50%, rgba(59, 130, 246, 0.1) 0%, transparent 50%);
@@ -48,10 +51,13 @@
     }
 
     @keyframes gradientShift {
-      0%, 100% {
+
+      0%,
+      100% {
         opacity: 0.4;
         transform: scale(1) rotate(0deg);
       }
+
       50% {
         opacity: 0.6;
         transform: scale(1.1) rotate(5deg);
@@ -75,12 +81,15 @@
         transform: translateY(100vh) translateX(0) scale(0);
         opacity: 0;
       }
+
       10% {
         opacity: 1;
       }
+
       90% {
         opacity: 1;
       }
+
       100% {
         transform: translateY(-100vh) translateX(100px) scale(1);
         opacity: 0;
@@ -109,9 +118,11 @@
       0% {
         transform: rotate(0deg) scale(1);
       }
+
       50% {
         transform: rotate(180deg) scale(1.2);
       }
+
       100% {
         transform: rotate(360deg) scale(1);
       }
@@ -125,7 +136,7 @@
       width: 100%;
       height: 100%;
       z-index: 0;
-      background-image: 
+      background-image:
         linear-gradient(rgba(99, 102, 241, 0.05) 1px, transparent 1px),
         linear-gradient(90deg, rgba(99, 102, 241, 0.05) 1px, transparent 1px);
       background-size: 50px 50px;
@@ -136,6 +147,7 @@
       0% {
         background-position: 0 0;
       }
+
       100% {
         background-position: 50px 50px;
       }
@@ -205,28 +217,32 @@
 
     /* Animated border */
     @keyframes borderGlow {
-      0%, 100% {
+
+      0%,
+      100% {
         border-color: rgba(99, 102, 241, 0.3);
       }
+
       50% {
         border-color: rgba(99, 102, 241, 0.6);
       }
     }
   </style>
 </head>
+
 <body>
   <!-- Gradient Background -->
   <div class="gradient-bg"></div>
-  
+
   <!-- Grid Background -->
   <div class="grid-bg"></div>
-  
+
   <!-- Geometric Shapes -->
   <div class="geometric-bg" id="geometric-container"></div>
-  
+
   <!-- Particles Container -->
   <div id="particles-container"></div>
-  
+
   <!-- Spotlight -->
   <div class="spotlight" id="spotlight"></div>
 
@@ -243,7 +259,7 @@
     function createParticles() {
       const container = document.getElementById('particles-container');
       const particleCount = 30;
-      
+
       for (let i = 0; i < particleCount; i++) {
         const particle = document.createElement('div');
         particle.className = 'particle';
@@ -295,7 +311,7 @@
 
       React.useEffect(() => {
         const handleScroll = () => {
-          const sections = ['home', 'skills', 'projects', 'experience', 'contact'];
+          const sections = ['home', 'about', 'skills', 'projects', 'ongoing project', 'contact'];
           const scrollPosition = window.scrollY + 100;
 
           for (const section of sections) {
@@ -321,15 +337,15 @@
           element.scrollIntoView({ behavior: 'smooth' });
         }
       };
-//skills section
+      //skills section
       const skills = {
         Languages: ['JavaScript', 'Rust', 'Python', 'Java', 'C'],
         Frontend: ['React', 'Next.js', 'Tailwind CSS', 'HTML5', 'CSS3'],
         Backend: ['Node.js', 'Express', 'Django', 'REST APIs'],
-        Databases: ['PostgreSQL', 'MongoDB',  'MySQL','Supabase'],
-        Tools: ['Git', 'Docker', 'Railway', 'Render', 'Postman','Vercel']
+        Databases: ['PostgreSQL', 'MongoDB', 'MySQL', 'Supabase'],
+        Tools: ['Git', 'Docker', 'Railway', 'Render', 'Postman', 'Vercel']
       };
-//project section
+      //project section
       const projects = [
         {
           title: 'Prompt Coach',
@@ -356,14 +372,14 @@
           demo: null
         }
       ];
-//current work section
+      //current work section
       const currentWork = [
         {
           name: 'Project Management Platflorm',
           description: 'A full-stack project management platform inspired by Basecamp, built to streamline team collaboration through task tracking, discussions, file sharing, and real-time project updates—all in one centralized workspace.',
           technologies: ['React', 'Docker', 'Node.js'],
           timeframe: 'Feb 2026 - Present'
-        }  
+        }
       ];
 
       const categoryIcons = {
@@ -408,9 +424,9 @@
             }
           },
             React.createElement('div', {
-              style: { 
-                fontSize: '20px', 
-                fontWeight: 700, 
+              style: {
+                fontSize: '20px',
+                fontWeight: 700,
                 color: '#6366F1',
                 textShadow: '0 0 20px rgba(99, 102, 241, 0.5)'
               }
@@ -418,7 +434,7 @@
             React.createElement('div', {
               style: { display: 'flex', gap: '32px', flexWrap: 'wrap' }
             },
-              ['Home', 'Skills', 'Projects', 'Experience', 'Contact'].map(item =>
+              ['Home', 'About', 'Skills', 'Projects', 'Ongoing Project', 'Contact'].map(item =>
                 React.createElement('button', {
                   key: item,
                   onClick: () => scrollToSection(item.toLowerCase()),
@@ -569,6 +585,181 @@
           )
         ),
 
+        // About Section
+        React.createElement('section', {
+          id: 'about',
+          style: {
+            padding: '120px 32px',
+            maxWidth: '1200px',
+            margin: '0 auto',
+            position: 'relative',
+            zIndex: 2
+          }
+        },
+          React.createElement('h2', {
+            style: {
+              fontSize: '32px',
+              fontWeight: 600,
+              marginBottom: '48px',
+              color: '#E5E7EB',
+              textAlign: 'center',
+              textShadow: '0 0 20px rgba(99, 102, 241, 0.3)'
+            }
+          }, 'About Me'),
+          React.createElement('div', {
+            style: {
+              display: 'grid',
+              gridTemplateColumns: window.innerWidth > 768 ? 'repeat(2, 1fr)' : '1fr',
+              gap: '32px'
+            }
+          },
+            // Main About Card
+            React.createElement('div', {
+              className: 'glass card-3d',
+              style: {
+                padding: '32px',
+                borderRadius: '12px',
+                boxShadow: '0 8px 32px rgba(0, 0, 0, 0.3)',
+                transition: 'all 0.3s',
+                gridColumn: window.innerWidth > 768 ? 'span 2' : 'span 1'
+              }
+            },
+              React.createElement('h3', {
+                style: {
+                  fontSize: '24px',
+                  fontWeight: 600,
+                  color: '#6366F1',
+                  marginBottom: '20px',
+                  textShadow: '0 0 15px rgba(99, 102, 241, 0.3)'
+                }
+              }, '👨‍💻 Who I Am'),
+              React.createElement('p', {
+                style: {
+                  fontSize: '16px',
+                  lineHeight: 1.8,
+                  color: '#D1D5DB',
+                  marginBottom: '16px'
+                }
+              }, 'I like learning by doing — especially when it means getting stuck, Googling a lot, and finally seeing things work. I’m a full-stack developer early in my journey, with a strong interest in backend development. Most of my time goes into building projects, exploring new concepts, and strengthening my fundamentals.'),
+              React.createElement('p', {
+                style: {
+                  fontSize: '16px',
+                  lineHeight: 1.8,
+                  color: '#D1D5DB'
+                }
+              }, 'I’m especially curious about how software is designed behind the scenes, how systems scale, and how small decisions in backend logic can have a big impact. This portfolio is a snapshot of what I’m learning, building, and experimenting with along the way.')
+            ),
+            // What I Do Card
+            React.createElement('div', {
+              className: 'glass card-3d glow',
+              style: {
+                padding: '28px',
+                borderRadius: '12px',
+                boxShadow: '0 8px 32px rgba(0, 0, 0, 0.3)',
+                transition: 'all 0.3s',
+                borderLeft: '4px solid #6366F1'
+              },
+              onMouseEnter: (e) => {
+                e.currentTarget.style.transform = 'perspective(1000px) rotateX(2deg) rotateY(-2deg) translateY(-4px) translateZ(10px)';
+                e.currentTarget.style.boxShadow = '0 12px 40px rgba(99, 102, 241, 0.3)';
+              },
+              onMouseLeave: (e) => {
+                e.currentTarget.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0) translateZ(0)';
+                e.currentTarget.style.boxShadow = '0 8px 32px rgba(0, 0, 0, 0.3)';
+              }
+            },
+              React.createElement('h3', {
+                style: {
+                  fontSize: '20px',
+                  fontWeight: 600,
+                  color: '#E5E7EB',
+                  marginBottom: '16px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '8px'
+                }
+              }, '🚀 What I Do'),
+              React.createElement('ul', {
+                style: {
+                  listStyle: 'none',
+                  padding: 0,
+                  margin: 0
+                }
+              },
+                ['Build full-stack web applications', 'Design and implement RESTful APIs', 'Optimize database performance', 'Write clean, maintainable code'].map((item, index) =>
+                  React.createElement('li', {
+                    key: index,
+                    style: {
+                      fontSize: '15px',
+                      lineHeight: 1.8,
+                      color: '#9CA3AF',
+                      marginBottom: '12px',
+                      paddingLeft: '24px',
+                      position: 'relative'
+                    }
+                  },
+                    React.createElement('span', {
+                      style: {
+                        position: 'absolute',
+                        left: 0,
+                        color: '#6366F1',
+                        fontWeight: 600
+                      }
+                    }, '▸'),
+                    item
+                  )
+                )
+              )
+            ),
+            // Interests & Approach Card
+            React.createElement('div', {
+              className: 'glass card-3d glow',
+              style: {
+                padding: '28px',
+                borderRadius: '12px',
+                boxShadow: '0 8px 32px rgba(0, 0, 0, 0.3)',
+                transition: 'all 0.3s',
+                borderLeft: '4px solid #8B5CF6'
+              },
+              onMouseEnter: (e) => {
+                e.currentTarget.style.transform = 'perspective(1000px) rotateX(2deg) rotateY(-2deg) translateY(-4px) translateZ(10px)';
+                e.currentTarget.style.boxShadow = '0 12px 40px rgba(139, 92, 246, 0.3)';
+              },
+              onMouseLeave: (e) => {
+                e.currentTarget.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0) translateZ(0)';
+                e.currentTarget.style.boxShadow = '0 8px 32px rgba(0, 0, 0, 0.3)';
+              }
+            },
+              React.createElement('h3', {
+                style: {
+                  fontSize: '20px',
+                  fontWeight: 600,
+                  color: '#E5E7EB',
+                  marginBottom: '16px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '8px'
+                }
+              }, '💡 My Approach'),
+              React.createElement('p', {
+                style: {
+                  fontSize: '15px',
+                  lineHeight: 1.8,
+                  color: '#9CA3AF',
+                  marginBottom: '16px'
+                }
+              }, 'My approach to every project starts with clarity. I create a product review document to understand the problem, define features, and set the right direction before writing code. This helps me stay focused and build with purpose instead of guessing. I prefer thinking things through independently and exploring possible solutions on my own. If needed, I then seek feedback or ask questions with better context.'),
+              React.createElement('p', {
+                style: {
+                  fontSize: '15px',
+                  lineHeight: 1.8,
+                  color: '#9CA3AF'
+                }
+              }, '')
+            )
+          )
+        ),
+
         // Skills Section
         React.createElement('section', {
           id: 'skills',
@@ -594,7 +785,7 @@
             style: { display: 'grid', gap: '32px' }
           },
             Object.entries(skills).map(([category, items]) =>
-              React.createElement('div', { 
+              React.createElement('div', {
                 key: category,
                 className: 'glass card-3d',
                 style: {
@@ -734,8 +925,8 @@
                   }, project.title),
                   React.createElement('span', {
                     style: {
-                      backgroundColor: project.status === 'Completed' 
-                        ? 'rgba(34, 197, 94, 0.15)' 
+                      backgroundColor: project.status === 'Completed'
+                        ? 'rgba(34, 197, 94, 0.15)'
                         : 'rgba(251, 191, 36, 0.15)',
                       color: project.status === 'Completed' ? '#22C55E' : '#FBBF24',
                       padding: '4px 12px',
@@ -845,8 +1036,9 @@
         ),
 
         // Experience Section
+        //this part
         React.createElement('section', {
-          id: 'experience',
+          id: 'ongoing project',
           style: {
             padding: '120px 32px',
             maxWidth: '1200px',
@@ -988,7 +1180,7 @@
               flexWrap: 'wrap'
             }
           },
-          //email section
+            //email section
             React.createElement('button', {
               onClick: (e) => {
                 e.preventDefault();
@@ -1118,4 +1310,5 @@
     root.render(React.createElement(Portfolio));
   </script>
 </body>
+
 </html>
