@@ -334,7 +334,7 @@
         {
           title: 'Prompt Coach',
           description: 'A web app for mastering prompt engineering through hands-on practice. Write a prompt, send it to your favorite LLM (ChatGPT, Claude, etc.), and get instant evaluation: a quality score, actionable feedback, and an optional rewritten "better prompt." Learn by doing—no theory required! Coming soon: Full multi-LLM support and advanced analytics.',
-          techStack: ['React(via Vite)', 'Express.io', 'Node.js', 'Postgress'],
+          techStack: ['React(via Vite)', 'Express', 'Node.js', 'Postgress'],
           status: 'Completed',
           github: 'https://github.com/yash2106-byte/PromptCoach',
           demo: 'prompt-coachfrontend.vercel.app'
@@ -989,8 +989,23 @@
             }
           },
           //email section
-            React.createElement('a', {
-              href: "mailto:rajyash2510@gmail.com",
+            React.createElement('button', {
+              onClick: (e) => {
+                e.preventDefault();
+                const email = 'rajyash2510@gmail.com';
+                // Try to open email client
+                window.location.href = 'mailto:' + email;
+                // Also copy to clipboard as backup
+                navigator.clipboard.writeText(email).then(() => {
+                  e.target.textContent = '✓ Email Copied!';
+                  setTimeout(() => {
+                    e.target.textContent = '📧 Email Me';
+                  }, 2000);
+                }).catch(() => {
+                  // If clipboard fails, just open email
+                  console.log('Email: ' + email);
+                });
+              },
               className: 'glow',
               style: {
                 display: 'inline-block',
@@ -1000,7 +1015,8 @@
                 borderRadius: '8px',
                 fontSize: '16px',
                 fontWeight: 600,
-                textDecoration: 'none',
+                border: 'none',
+                cursor: 'pointer',
                 transition: 'all 0.3s',
                 boxShadow: '0 4px 20px rgba(99, 102, 241, 0.4)',
                 position: 'relative',
@@ -1077,7 +1093,7 @@
           )
         ),
 
-        // Footer
+        // Footer section
         React.createElement('footer', {
           className: 'glass',
           style: {
@@ -1092,7 +1108,7 @@
               fontSize: '14px',
               margin: 0
             }
-          }, '© 2026 Your Name. Built with React and passion for great design.')
+          }, '© 2026 Yash Raj. Built with React and passion for great design.')
         )
       );
     }
