@@ -321,15 +321,15 @@
           element.scrollIntoView({ behavior: 'smooth' });
         }
       };
-
+//skills section
       const skills = {
         Languages: ['JavaScript', 'Rust', 'Python', 'Java', 'C'],
         Frontend: ['React', 'Next.js', 'Tailwind CSS', 'HTML5', 'CSS3'],
         Backend: ['Node.js', 'Express', 'Django', 'REST APIs'],
-        Databases: ['PostgreSQL', 'MongoDB',  'MySQL'],
-        Tools: ['Git', 'Docker', 'AWS', 'Vercel', 'Postman','ThunderClient']
+        Databases: ['PostgreSQL', 'MongoDB',  'MySQL','Supabase'],
+        Tools: ['Git', 'Docker', 'Railway', 'Render', 'Postman','Vercel']
       };
-
+//project section
       const projects = [
         {
           title: 'Prompt Coach',
@@ -351,25 +351,19 @@
           title: 'URL Shortener',
           description: 'A fast and efficient URL shortening service with analytics tracking and custom alias support. Built with scalability in mind.',
           techStack: ['Node.js', 'Express', 'PostgreSQL', 'Tailwind'],
-          status: 'Ongoing',
+          status: 'Completed',
           github: 'https://github.com/yash2106-byte/URL_Shortner',
           demo: null
         }
       ];
-
+//current work section
       const currentWork = [
         {
-          name: 'Microservices Architecture Study',
-          description: 'Building a scalable microservices-based application to understand service orchestration, API gateways, and distributed systems.',
-          technologies: ['Docker', 'Kubernetes', 'Node.js', 'RabbitMQ'],
-          timeframe: 'Jan 2026 - Present'
-        },
-        {
-          name: 'Machine Learning Integration',
-          description: 'Exploring ML model deployment in web applications, focusing on recommendation systems and data prediction.',
-          technologies: ['Python', 'TensorFlow', 'FastAPI', 'React'],
-          timeframe: 'Dec 2025 - Present'
-        }
+          name: 'Project Management Platflorm',
+          description: 'A full-stack project management platform inspired by Basecamp, built to streamline team collaboration through task tracking, discussions, file sharing, and real-time project updates—all in one centralized workspace.',
+          technologies: ['React', 'Docker', 'Node.js'],
+          timeframe: 'Feb 2026 - Present'
+        }  
       ];
 
       const categoryIcons = {
@@ -514,7 +508,8 @@
                 maxWidth: '600px',
                 marginBottom: '40px'
               }
-            }, 'Building scalable web applications with modern technologies. Passionate about clean code, user experience, and continuous learning.'),
+              //my intro sections
+            }, 'Full-stack developer who enjoys coding, shipping features, and improving things bit by bit, with experience in frontend and a stronger interest in backend.'),
             React.createElement('div', {
               style: { display: 'flex', gap: '16px', flexWrap: 'wrap' }
             },
@@ -993,8 +988,9 @@
               flexWrap: 'wrap'
             }
           },
+          //email section
             React.createElement('a', {
-              href: 'mailto:your.email@example.com',
+              href: "mailto:rajyash2510@gmail.com",
               className: 'glow',
               style: {
                 display: 'inline-block',
@@ -1021,8 +1017,9 @@
                 e.currentTarget.style.boxShadow = '0 4px 20px rgba(99, 102, 241, 0.4)';
               }
             }, '📧 Email Me'),
+            //github section
             React.createElement('a', {
-              href: 'https://github.com/yourusername',
+              href: 'https://github.com/yash2106-byte',
               target: '_blank',
               rel: 'noopener noreferrer',
               className: 'glass',
@@ -1050,7 +1047,7 @@
               }
             }, '💻 GitHub'),
             React.createElement('a', {
-              href: 'https://linkedin.com/in/yourusername',
+              href: 'https://x.com/YashRaj_2106',
               target: '_blank',
               rel: 'noopener noreferrer',
               className: 'glass',
@@ -1076,7 +1073,7 @@
                 e.currentTarget.style.transform = 'translateY(0)';
                 e.currentTarget.style.boxShadow = 'none';
               }
-            }, '🔗 LinkedIn')
+            }, '🔗 X')
           )
         ),
 
