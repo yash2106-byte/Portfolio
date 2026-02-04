@@ -1,0 +1,159 @@
+AGENT-PROOF DESIGN SPEC
+Personal Portfolio Web Application
+
+This is a prescriptive design specification. A basic or unstyled HTML page is INVALID.
+
+1. Design Intent (Non-Negotiable)
+- Must look like a modern Dribbble-style developer portfolio
+- Dark-themed, premium, recruiter-ready
+- Plain or default-styled pages are considered failed output
+
+2. Color System (Mandatory)
+Allowed colors only:
+- Background: #0B0F14
+- Surface (cards/sections): #111827
+- Primary text: #E5E7EB
+- Secondary text: #9CA3AF
+- Accent: #6366F1
+
+Rules:
+- Dark background only
+- Accent color only for buttons, links, highlights
+- No white backgrounds or random colors
+
+3. Typography Rules (Mandatory)
+Font family:
+Inter, system-ui, sans-serif
+
+Font sizes:
+- Hero name: 48–56px, weight 700–800
+- Section headings: 28–32px, weight 600
+- Body text: 16–18px, weight 400
+- Small/meta text: 14px
+
+Line height:
+- Body text: 1.6
+
+Do NOT:
+- Use default serif fonts
+- Mix multiple fonts
+- Use low contrast text
+
+4. Layout Rules (Mandatory)
+- Single-page scroll layout
+- Centered content
+- Max width: 1100–1200px
+
+Spacing:
+- Section spacing: 96–120px
+- Card padding: 24–32px
+- Grid gap: 24px
+
+Layout:
+- Use CSS Grid or Flexbox
+- Projects must be cards, not plain lists
+
+5. Navigation Bar
+- Fixed top navigation
+- Height ~64px
+- Links: Home, Skills, Projects, Experience, Contact
+- Smooth scrolling
+- Active section highlight
+
+6. Hero Section (Critical)
+Must include:
+- Intro label
+- Large name heading
+- Role subtitle
+- Short description (1–2 lines)
+- CTA buttons (View Projects, Download Resume)
+
+Rules:
+- Left aligned
+- Large negative space
+- Typography-driven
+- If hero does not dominate visually → FAIL
+
+7. Skills Section
+- Grid layout
+- Grouped by category:
+  Languages, Frontend, Backend, Databases, Tools
+- Skill chips or cards
+- Rounded corners
+- No progress bars
+- No bullet-only lists
+
+8. Projects Section (Most Important)
+Layout:
+- 2-column grid (desktop)
+- 1-column (mobile)
+
+Each project card must include:
+- Title
+- Short description
+- Tech stack tags
+- Status badge (Completed/Ongoing)
+- GitHub button
+- Live Demo button
+
+Interaction:
+- Hover elevation or border highlight
+- Plain text project lists are INVALID
+
+9. Experience / Currently Working On
+- Vertical list or timeline blocks
+- Each item:
+  - Name
+  - Short explanation
+  - Status or timeframe
+  - Technologies
+- Muted colors
+- Clear separation
+
+10. Contact / CTA Section
+- Center aligned
+- Clear visual separation
+- Short headline
+- One-line message
+- Links: Email, GitHub, LinkedIn
+- No long forms
+
+11. Cards & Buttons
+Cards:
+- Surface background
+- Border radius: 12px
+- Padding: 24–32px
+- Hover transform or border change
+
+Buttons:
+- Rounded corners
+- Accent background
+- Hover state required
+
+12. Interactions & Motion
+Allowed:
+- Hover effects
+- Smooth scrolling
+- Subtle fade-ins
+
+13. Responsiveness
+- Desktop: multi-column layouts
+- Tablet: reduced columns
+- Mobile: single column, large tap targets
+
+14. Validation Criteria
+Implementation is INVALID if:
+- Looks like basic HTML
+- Uses default browser styles
+- No visual hierarchy
+- Sections not visually separated
+- Projects not card-based
+
+Implementation is SUCCESSFUL if:
+- Looks like a modern Dribbble portfolio
+- Content scannable in under 5 seconds
+- Visual hierarchy is immediately clear
+
+15. Final Instruction
+Visual quality matters as much as correctness.
+Follow this spec strictly.

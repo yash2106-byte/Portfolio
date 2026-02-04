@@ -1,0 +1,152 @@
+PRODUCT REQUIREMENTS DOCUMENT (PRD)
+Personal Portfolio Web Application
+
+1. Product Overview
+Product Name:
+Personal Portfolio Web App
+
+Purpose:
+The Personal Portfolio Web App is a dynamic, responsive web application that showcases my professional profile, technical skills, projects, and ongoing work. It serves as a central hub for recruiters, hiring managers, and collaborators to understand my capabilities, experience, and growth as a software developer.
+
+Target Audience:
+- Recruiters
+- Hiring Managers
+- Technical Interviewers
+- Open-source collaborators
+- Peer developers
+
+2. Goals & Objectives
+Primary Goals:
+- Present my profile in a clean and professional way
+- Highlight completed and ongoing projects
+- Demonstrate frontend and backend skills
+- Provide clear contact options
+
+Success Metrics:
+- Profile understandable within 30 seconds
+- Clear project explanations
+- Fast loading and responsive UI
+- Easy content updates
+
+3. User Personas
+Recruiter:
+- Wants quick skill and project overview
+- Looks for resume and GitHub links
+
+Technical Interviewer:
+- Reviews project architecture
+- Evaluates code quality and decisions
+
+Peer Developer:
+- Interested in learning and collaboration
+
+4. Functional Requirements
+
+4.1 Home / Hero Section
+- Name and professional title
+- Short introduction
+- Call-to-action buttons (View Projects, Download Resume)
+- Smooth navigation
+
+4.2 About Me Section
+- Short bio
+- Current learning focus
+- Career goals
+
+4.3 Skills / Tech Stack
+- Categorized skills:
+  Languages, Frontend, Backend, Databases, Tools
+- Visual representation using cards or tags
+
+4.4 Projects Section
+- Project title
+- Description
+- Tech stack
+- Status (Completed / Ongoing)
+- GitHub and Live Demo links
+
+4.5 Currently Working On
+- Active projects
+- Problem statement
+- Learning outcomes
+
+4.6 Achievements & Profiles
+- GitHub
+- LeetCode / Codeforces
+- Certifications (if any)
+
+4.7 Contact Section
+- Email
+- Social links
+- Optional contact form with validation
+
+5. Non-Functional Requirements
+Performance:
+- Load time under 2 seconds
+
+Responsiveness:
+- Works on desktop, tablet, and mobile
+
+Accessibility:
+- Semantic HTML
+- Keyboard navigation
+- Proper contrast
+
+SEO:
+- Meta tags
+- Page titles and descriptions
+
+6. Technical Requirements
+Frontend:
+- React
+- Tailwind CSS
+- Component-based design
+
+Backend (Optional):
+- Node.js
+- Express
+- REST APIs
+
+Database (Optional):
+- MongoDB or PostgreSQL
+
+Hosting:
+- Frontend: Vercel or Netlify
+- Backend: Render or Railway
+
+7. Data Model (Example)
+Project Object:
+{
+  title: URL Shortener
+  description: Shortens long URLs
+  techStack: Node.js, Express, PostgreSQL
+  status: Completed
+  githubLink:
+  liveDemo:
+}
+
+8. Future Enhancements
+- Admin dashboard
+- Blog section
+- Dark mode
+- Analytics
+- Resume generator
+
+9. Out of Scope
+- Authentication
+- Payments
+- CMS
+
+10. Risks & Mitigation
+Overengineering: Build MVP first
+Scope creep: Follow PRD strictly
+Performance issues: Optimize assets early
+
+11. Timeline
+Week 1: Design
+Week 2: Frontend development
+Week 3: Backend (optional)
+Week 4: Testing and deployment
+
+12. Summary
+This portfolio web app is a living product showcasing skills, projects, and growth as a software developer.
