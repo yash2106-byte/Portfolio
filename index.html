@@ -343,6 +343,7 @@
         Frontend: ['React', 'Next.js', 'Tailwind CSS', 'HTML5', 'CSS3'],
         Backend: ['Node.js', 'Express', 'Django', 'REST APIs'],
         Databases: ['PostgreSQL', 'MongoDB', 'MySQL', 'Supabase'],
+        'AI & Agentic Systems': ['Groq API', 'LLM Orchestration', 'Prompt Engineering', 'Multi-Agent Systems'],
         Tools: ['Git', 'Docker', 'Railway', 'Render', 'Postman', 'Vercel']
       };
       //project section
@@ -350,14 +351,30 @@
         {
           title: 'Prompt Coach',
           description: 'A web app for mastering prompt engineering through hands-on practice. Write a prompt, send it to your favorite LLM (ChatGPT, Claude, etc.), and get instant evaluation: a quality score, actionable feedback, and an optional rewritten "better prompt." Learn by doing—no theory required! Coming soon: Full multi-LLM support and advanced analytics.',
-          techStack: ['React(via Vite)', 'Express', 'Node.js', 'Postgress'],
+          techStack: ['React (via Vite)', 'Express', 'Node.js', 'PostgreSQL'],
           status: 'Completed',
           github: 'https://github.com/yash2106-byte/PromptCoach',
-          demo: 'prompt-coachfrontend.vercel.app'
+          demo: 'https://prompt-coachfrontend.vercel.app'
+        },
+        {
+          title: 'EduVault',
+          description: 'A pure-SQL project management system that proves a fully functional, production-style application can be built entirely inside PostgreSQL — no application layer at all. 11 tables, stored procedures, and triggers power the business logic, with a psql CLI as the only interface.',
+          techStack: ['PostgreSQL', 'PL/pgSQL', 'psql CLI'],
+          status: 'Completed',
+          github: 'https://github.com/yash2106-byte/EduVault',
+          demo: null
+        },
+        {
+          title: 'Project Management Platform',
+          description: 'A full-stack project management platform inspired by Basecamp, built to streamline team collaboration through task tracking, discussions, file sharing, and real-time project updates — all in one centralized workspace. Includes JWT-based authentication and email verification.',
+          techStack: ['React', 'Node.js', 'Express', 'Docker'],
+          status: 'Completed',
+          github: 'https://github.com/yash2106-byte/BuildCamp',
+          demo: null
         },
         {
           title: 'Duplicate Slayer',
-          description: 'A fast, efficient, and user-friendly command-line tool written in Rust for finding and removing duplicate files on your system.Features -Fast Parallel Processing: Utilizes Rayon for multi-threaded file processing -SHA-256 Hashing: Reliable duplicate detection using cryptographic hashing -Progress Tracking: Real-time progress bars with ETA and processing speed -Interactive Deletion: Safe prompt-based deletion with user confirmation -Detailed Statistics: Shows wasted space and duplicate counts -Cross-Platform: Works on Windows, macOS, and Linux',
+          description: 'A fast, efficient, and user-friendly command-line tool written in Rust for finding and removing duplicate files on your system. Features: fast parallel processing via Rayon, SHA-256 hashing for reliable duplicate detection, real-time progress tracking with ETA, interactive prompt-based deletion, detailed wasted-space statistics, and cross-platform support (Windows, macOS, Linux).',
           techStack: ['Rust', 'Cargo', 'PostgreSQL'],
           status: 'Completed',
           github: 'https://github.com/yash2106-byte/DUPLICATE-SLAYER',
@@ -375,10 +392,10 @@
       //current work section
       const currentWork = [
         {
-          name: 'Project Management Platflorm',
-          description: 'A full-stack project management platform inspired by Basecamp, built to streamline team collaboration through task tracking, discussions, file sharing, and real-time project updates—all in one centralized workspace.',
-          technologies: ['React', 'Docker', 'Node.js'],
-          timeframe: 'Feb 2026 - Present'
+          name: 'Agentic AI Lab',
+          description: 'A hands-on, four-phase journey into agentic AI — starting from LLM foundations, moving through single-agent tool use, then multi-agent orchestration, and ending in a production-grade capstone project. Currently building a Phase 1 CLI chatbot with persistent conversation history and persona switching, powered by Groq\'s LLaMA 3.3 70B model.',
+          technologies: ['Python', 'Jupyter', 'Groq API', 'LLM Orchestration'],
+          timeframe: 'Jul 2026 - Present'
         }
       ];
 
@@ -387,6 +404,7 @@
         Frontend: '🎨',
         Backend: '⚙️',
         Databases: '🗄️',
+        'AI & Agentic Systems': '🤖',
         Tools: '🔧'
       };
 
@@ -515,7 +533,7 @@
                 marginBottom: '24px',
                 textShadow: '0 0 20px rgba(99, 102, 241, 0.3)'
               }
-            }, 'Full Stack Developer'),
+            }, 'Backend Developer Building Agentic AI Systems'),
             React.createElement('p', {
               style: {
                 fontSize: '18px',
@@ -525,7 +543,7 @@
                 marginBottom: '40px'
               }
               //my intro sections
-            }, 'Full-stack developer who enjoys coding, shipping features, and improving things bit by bit, with experience in frontend and a stronger interest in backend.'),
+            }, 'Full-stack developer with a strong interest in backend development, currently building agentic AI systems from the ground up — going from LLM foundations to multi-agent orchestration.'),
             React.createElement('div', {
               style: { display: 'flex', gap: '16px', flexWrap: 'wrap' }
             },
@@ -653,7 +671,7 @@
                   lineHeight: 1.8,
                   color: '#D1D5DB'
                 }
-              }, 'I’m especially curious about how software is designed behind the scenes, how systems scale, and how small decisions in backend logic can have a big impact. This portfolio is a snapshot of what I’m learning, building, and experimenting with along the way.')
+              }, 'I’m especially curious about how software is designed behind the scenes, how systems scale, and how small decisions in backend logic can have a big impact. Lately that curiosity has pulled me toward agentic AI — understanding how LLMs can reason, use tools, and coordinate with each other. This portfolio is a snapshot of what I’m learning, building, and experimenting with along the way.')
             ),
             // What I Do Card
             React.createElement('div', {
@@ -692,7 +710,7 @@
                   margin: 0
                 }
               },
-                ['Build full-stack web applications', 'Design and implement RESTful APIs', 'Optimize database performance', 'Write clean, maintainable code'].map((item, index) =>
+                ['Build full-stack web applications', 'Design and implement RESTful APIs', 'Optimize database performance', 'Build agentic AI systems with LLM tool-calling', 'Write clean, maintainable code'].map((item, index) =>
                   React.createElement('li', {
                     key: index,
                     style: {
